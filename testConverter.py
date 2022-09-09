@@ -8,7 +8,7 @@ class TestConverter(unittest.TestCase):
         self.stroka = self.Strconverter.stroka
 
     def test_string(self):
-        self.assertNotEqual(self.Strconverter.converter(), self.stroka)
+        self.assertEqual(self.Strconverter.converter(), self.stroka.capitalize() + "!")
 
 
 if __name__ == "__main__":
