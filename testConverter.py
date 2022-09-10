@@ -1,14 +1,11 @@
 import unittest
-from StringConverter import StringConverter
+from StringConverter import converter
 
 
 class TestConverter(unittest.TestCase):
-    def setUp(self) -> None:
-        self.Strconverter = StringConverter("привет")
-        self.stroka = self.Strconverter.stroka
 
     def test_string(self):
-        self.assertEqual(self.Strconverter.converter(), self.stroka.capitalize() + "!")
+        self.assertEqual(converter("fsasaf"), "Fsasaf!")
 
 
 if __name__ == "__main__":
